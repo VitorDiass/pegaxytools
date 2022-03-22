@@ -18,10 +18,37 @@
     font-family: "Roboto";
 
     --color-white : white;
+    --color-text-muted : #B1B1B1;
     --color-success : #5887A5;
     --color-danger : #A43352;
-    --colo-light-blue : #24B7DD;
 
+    /*INFO CARDS COLORS*/
+    --color-card-bg : rgba(6, 8, 14, 0.5);
+    --color-text-secundary : #B1B1B1;
+
+    /*MAIN MENU CARD COLORS*/
+    --color-light-blue : #24b7dd;
+    --color-light-blue-025 : rgba(36,183,221, 0.25);
+    --color-light-blue-001 : #2A2D33;
+    /* --color-light-blue-001 : rgba(36, 183, 221, 0.01); */
+    --color-orange : #E29219;
+    --color-orange-025 : rgba(226, 146, 25, 0.25);
+    --color-orange-001 : #2A2D33;
+    --color-pink : #E71EA8;
+    --color-pink-025 : rgba(231, 30, 168, 0.25);
+    --color-pink-001 : #2A2D33;
+    --color-green : #24DD84;
+    --color-green-025 : rgba(36, 221, 132, 0.25);
+    --color-green-001 : #2A2D33;
+
+    /*API STATUS COLORS*/
+    --color-blue-api : #5887A5;
+    --color-red-api : #A43352;
+
+}
+
+.color-text-secundary {
+    color : var(--color-text-secundary);
 }
 
 .header {
@@ -30,16 +57,34 @@
 }
 
 .text-glow-white {
-    text-shadow: white 0 0 10px;
+    text-shadow: white 0 0 6px;
+}
+
+.text-glow-blue {
+    text-shadow: #24b7dd 0 0 6px;   
 }
 
 .main-title{
     font-family: "Anurati";
-    font-size: 60px;
-    font-weight: 600;
 }
 
 .main-divider {
    
     box-shadow: 0px 5px 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ui.card{
+    margin : 0px !important;
+}
+
+@media only screen and (min-width: 1024px) {
+    .card-width {
+        min-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .card-width {
+        min-width: 500px;
+    }
 }

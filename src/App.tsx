@@ -1,22 +1,28 @@
-import React from 'react';
+import React from "react";
 import MainMenu from "./component/mainMenu";
-import { Button, Divider, Input, Segment } from 'semantic-ui-react'
+import { Button, Divider, Input, Segment } from "semantic-ui-react";
+import Footer from "./component/footer";
+import StatusBarComponent from "./component/statusbar";
+import MainHeaderComponent from "./component/mainHeader";
+import LayoutComponent from "./component/layout";
+import DividerComponent from "./component/divider";
 
 const App = () => {
   return (
     <>
-    <div className="h-screen bg-backimage bg-cover bg-no-repeat">
-    {/*   <div className="flex justify-center">STATUS BAR</div> */}
-      <div className="h-52 flex justify-center items-center">
-        <span className="text-white main-title text-glow-white">
-          PEXAGY STELLAR
-        </span>
-      </div>
-      <div className='mx-20'>
-        <div className='ui divider main-divider'></div>
-      </div>
-    <MainMenu></MainMenu>
-    </div>
+      {/*  <RoutesComponent/> */}
+      {/*   <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="general" element={<GeneralComponent />}/>
+      </Routes> */}
+      
+      <LayoutComponent>
+        <StatusBarComponent />
+        <MainHeaderComponent />
+        <DividerComponent />
+        <MainMenu />
+        <Footer />
+      </LayoutComponent>
     </>
   );
 };
