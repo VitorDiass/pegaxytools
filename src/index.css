@@ -25,6 +25,9 @@
     /*INFO CARDS COLORS*/
     --color-card-bg : rgba(6, 8, 14, 0.5);
     --color-text-secundary : #B1B1B1;
+    --color-text-subsecundary : #8f8f8f;
+
+    --color-card-bg-alt : rgba(6, 8, 14, 0.5);;
 
     /*MAIN MENU CARD COLORS*/
     --color-light-blue : #24b7dd;
@@ -47,9 +50,22 @@
 
 }
 
-.color-text-secundary {
-    color : var(--color-text-secundary);
+.bg-color-main {
+    background-color: #242D51;
 }
+
+.bg-color-from-card {
+    background-color:  var( --color-card-bg-alt);
+}
+
+.color-text-secundary {
+    color : var(--color-text-secundary) !important;
+}
+
+.color-text-subsecundary {
+    color : var(--color-text-subsecundary);
+}
+
 
 .header {
     letter-spacing: 2px;
